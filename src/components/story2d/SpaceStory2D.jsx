@@ -2,6 +2,10 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { BLOG_NOTES, DECLARATION, EXPERIENCE, OFFER_ITEMS, PROFILE, PROJECTS, PROOF_POINTS, SKILL_GROUPS } from '../../data/profile'
 import { STORY_SECTIONS } from '../../data/storySections'
+import HeroSection from '../HeroSection'
+import ProjectGrid from '../ProjectGrid'
+import Skills from '../Skills'
+import ExperienceTimeline from '../ExperienceTimeline'
 
 const THEME_OPTIONS = [
   { id: 'luxury-dark-editorial', label: 'Luxury Dark Editorial' },
@@ -293,6 +297,10 @@ export function SpaceStory2D() {
           </div>
         </div>
       </section>
+
+      <Skills />
+
+      <ExperienceTimeline />
 
       <section className="offer-grid" id="offer">
         <div className="section-heading panel-glass">
