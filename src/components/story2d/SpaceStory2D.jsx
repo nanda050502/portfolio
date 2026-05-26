@@ -320,34 +320,7 @@ export function SpaceStory2D() {
         </div>
       </section>
 
-      <section className="work-grid" id="work">
-        {PROJECTS.map((project, index) => (
-          <motion.article
-            key={project.name}
-            className="work-card panel-glass"
-            initial={{ opacity: 0, y: 36, x: index % 2 === 0 ? -26 : 26 }}
-            whileInView={{ opacity: 1, y: 0, x: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.52, ease: 'easeOut', delay: index * 0.08 }}
-          >
-            <p className="story-kicker">CASE STUDY</p>
-            <h3>{project.name}</h3>
-            <p>{project.summary}</p>
-            <div className="chip-row">
-              {project.stack.slice(0, 4).map((item) => (
-                <span key={item} className="chip">{item}</span>
-              ))}
-            </div>
-            <div className="case-poster" aria-hidden="true">
-              <div className="case-poster-copy">
-                <span>Case Study</span>
-                <strong>{project.name}</strong>
-                <small>Built as part of my academic and applied portfolio</small>
-              </div>
-            </div>
-          </motion.article>
-        ))}
-      </section>
+      <ProjectGrid count={3} />
 
       <section className="brand-proof panel-glass" id="brands">
         <div>
