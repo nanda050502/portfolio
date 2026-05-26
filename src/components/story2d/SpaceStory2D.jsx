@@ -210,41 +210,7 @@ export function SpaceStory2D() {
       </header>
 
       <section className="hero-grid" id="hero">
-        <motion.div
-          className="hero-copy panel-glass"
-          initial={{ opacity: 0, x: -32 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.55 }}
-          transition={{ duration: 0.65, ease: 'easeOut' }}
-        >
-          <p className="mono">FEATURE REEL</p>
-          <h1>{PROFILE.role}</h1>
-          <p className="hero-summary">{PROFILE.summary}</p>
-          <div className="hero-meta">
-            <span>MCA (Generative AI)</span>
-            <span>Fresher Profile</span>
-            <span>{PROFILE.location}</span>
-          </div>
-          <div className="hero-cta-row">
-            <button type="button" onClick={copyEmail} className="signal-btn">
-              Transmit Contact
-            </button>
-            <a href="#work" className="outline-btn">Explore Work</a>
-          </div>
-          <p className="signal-status">
-            {copyState === 'sent' && 'Transmission sent: email copied'}
-            {copyState === 'failed' && 'Transmission failed: clipboard unavailable'}
-            {copyState === 'idle' && 'Open to AI internships and junior roles'}
-          </p>
-          <div className="proof-strip">
-            {PROOF_POINTS.map((point) => (
-              <div key={point.label}>
-                <span>{point.label}</span>
-                <strong>{point.value}</strong>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+        <HeroSection />
 
         <motion.div
           className="hero-visual panel-glass"

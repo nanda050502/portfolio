@@ -240,6 +240,42 @@ body {
   min-height: min(100vh, 820px);
 }
 
+.hero-section {
+  display: flex;
+  align-items: stretch;
+  padding: 28px;
+}
+
+.hero-copy-inner {
+  display: grid;
+  gap: 12px;
+}
+
+.hero-cta-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+
+.proof-strip {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.proof-item span {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.proof-item strong {
+  display: block;
+  font-family: var(--title);
+  color: var(--text);
+}
+
 .hero-copy,
 .hero-visual,
 .social-strip,
