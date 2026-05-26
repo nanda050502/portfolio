@@ -18,11 +18,15 @@ export function ProjectCard({ project, index = 0 }) {
         ))}
       </div>
 
-      <div className="case-poster" aria-hidden="true">
+      <div
+        className="case-poster"
+        aria-hidden="true"
+        style={project.poster ? { backgroundImage: `url(${project.poster})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}
+      >
         <div className="case-poster-copy">
           <span>Case Study</span>
           <strong>{project.name}</strong>
-          <small>Built as part of academic and applied portfolio</small>
+          <small>{project.tagline ?? 'Built as part of academic and applied portfolio'}</small>
         </div>
       </div>
     </motion.article>

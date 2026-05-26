@@ -136,35 +136,50 @@ export const TOOLS = [
 
 export const PROJECTS = [
   {
-    name: 'AI-Driven Placement Intelligence and Placement Portal',
+    name: 'AI-Driven Placement Intelligence & Placement Portal',
     org: 'Talencia Global',
     summary:
-      'Placement intelligence platform combining company profiling, hiring signals, skill mapping, and resume analysis in one workflow.',
-    stack: ['Next.js 16', 'React 19', 'TypeScript 5', 'Tailwind CSS 4', 'FastAPI'],
+      'A data-driven web platform unifying company profiling, hiring-round intelligence, skill taxonomy mapping, and resume analysis into a single career planning workflow.',
+    stack: ['Next.js 16', 'React 19', 'TypeScript 5', 'Tailwind CSS 4', 'FastAPI', 'Supabase'],
+    poster: '',
+    link: '',
+    tagline: 'Full-stack production platform for career intelligence',
   },
   {
-    name: 'MISTRAL - Multimodal Conversational AI',
+    name: 'MISTRAL – Multimodal Conversational AI',
     summary:
-      'Multimodal conversational AI combining text generation, voice cloning, and avatar sync.',
-    stack: ['Ollama', 'RVC', 'Multimodal Pipeline'],
+      'A next-generation conversational AI integrating text (Ollama), voice cloning (RVC), and avatar sync for lifelike, expressive user interactions.',
+    stack: ['Ollama', 'RVC', 'Multimodal Pipeline', 'Avatar Sync'],
+    poster: '',
+    link: '',
+    tagline: 'Multimodal conversational pipeline with voice cloning and avatar sync',
   },
   {
-    name: 'Codegen - AI Code Generation Platform',
+    name: 'Codegen – AI-Powered Code Generation Platform',
     summary:
-      'Multi-LLM code generation platform with offline inference and evaluation loops.',
+      'A multi-model code generation platform using an ensemble of CodeLlama, StarCoder, GPT-4, and Claude-3, with offline inference support and feedback-based learning.',
     stack: ['CodeLlama', 'StarCoder', 'GPT-4', 'Claude-3', 'Ollama'],
+    poster: '',
+    link: '',
+    tagline: 'Ensemble code generation with offline inference and feedback loop',
   },
   {
-    name: 'Placement Prediction System',
+    name: 'Placement Prediction System – Machine Learning',
     summary:
-      'Placement predictor built with machine learning and deep learning classification models.',
-    stack: ['Python', 'Scikit-learn', 'Deep Learning', 'Streamlit'],
+      'ML models predicting student placement outcomes and classifying placement categories using deep learning, with a live Streamlit interface for real-time predictions.',
+    stack: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Streamlit'],
+    poster: '',
+    link: '',
+    tagline: 'End-to-end ML pipeline with live prediction interface',
   },
   {
     name: 'Landlord–Tenant Management System',
     summary:
-      'Java desktop management system with CRUD, PostgreSQL integration, and rent tracking.',
-    stack: ['Java', 'Swing', 'JDBC', 'PostgreSQL'],
+      'A Java desktop application with full CRUD functionality for tenant records, rent tracking, and payment history, backed by PostgreSQL.',
+    stack: ['Java', 'AWT', 'Swing', 'PostgreSQL', 'JDBC'],
+    poster: '',
+    link: '',
+    tagline: 'Robust desktop app demonstrating software engineering fundamentals',
   },
 ]
 
